@@ -14,6 +14,8 @@ public class Mensteespom {
 	private WebElement favTeecolor;
 	@FindBy (xpath="//div[@class=\"product-item-info\"]")
 	private WebElement tees;
+	@FindBy (xpath="//strong[@class=\"product name product-item-name\"]/a[@class=\"product-item-link\"]")
+	private WebElement jacRev;
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -25,6 +27,9 @@ public class Mensteespom {
 	}
 	public WebElement getTees() {
 		return tees;
+	}
+	public WebElement getJacRev() {
+		return jacRev;
 	}
 	public Mensteespom(WebDriver abc) {
 		driver=abc;

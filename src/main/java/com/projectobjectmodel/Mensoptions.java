@@ -31,53 +31,33 @@ public class Mensoptions {
 	public WebDriver getDriver() {
 		return driver;
 	}
-
-
 	public WebElement getMen() {
 		return Men;
 	}
-
-
 	public WebElement getTops() {
 		return tops;
 	}
-
-
 	public WebElement getJackets() {
 		return jackets;
 	}
-
-
 	public WebElement getHoodies() {
 		return hoodies;
 	}
-
-
 	public WebElement getTees() {
 		return tees;
 	}
-
-
 	public WebElement getTanks() {
 		return tanks;
 	}
-
-
 	public WebElement getBottoms() {
 		return bottoms;
 	}
-
-
 	public WebElement getPants() {
 		return pants;
 	}
-
-
 	public WebElement getShorts() {
 		return Shorts;
 	}
-
-
 	public Mensoptions(WebDriver abc) {
 		driver=abc;
 		PageFactory.initElements(driver, this);

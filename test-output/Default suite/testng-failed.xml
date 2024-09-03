@@ -5,9 +5,7 @@
     <classes>
       <class name="com.testcases.Logincase">
         <methods>
-          <include name="init"/>
           <include name="login"/>
-          <include name="signout"/>
         </methods>
       </class> <!-- com.testcases.Logincase -->
     </classes>

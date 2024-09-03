@@ -3,6 +3,7 @@ package com.projectobjectmanager;
 import org.openqa.selenium.WebDriver;
 
 import com.projectobjectmodel.Createaccountpom;
+import com.projectobjectmodel.Filterpom;
 import com.projectobjectmodel.Mensoptions;
 import com.projectobjectmodel.Mensteespom;
 import com.projectobjectmodel.Orderpagepom;
@@ -18,6 +19,7 @@ public class Projectobjectmanager {
 	Mensteespom menTee;
 	Orderpagepom orderPage;
 	Shippingpom shipPage;
+	Filterpom filterOptions;
 	public Createaccountpom getInstanceCA() {
 		if(cap==null) {
 			cap=new Createaccountpom(driver);
@@ -53,6 +55,12 @@ public class Projectobjectmanager {
 			shipPage=new Shippingpom(driver);
 		}
 		return shipPage;
+	}
+	public Filterpom getInstanceFilter() {
+		if(filterOptions==null) {
+			filterOptions=new Filterpom(driver);
+		}
+		return filterOptions;
 	}
 	public Projectobjectmanager(WebDriver abc) {
 		this.driver=abc;

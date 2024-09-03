@@ -12,6 +12,8 @@ public class Orderpagepom {
 	private WebElement sizeXs;
 	@FindBy (xpath="//div[@option-label=\"Black\"]")
 	private WebElement colorB;
+	@FindBy (xpath="//div[@option-label=\"Red\"]")
+	private WebElement colorR;
 	@FindBy (name="qty")
 	private WebElement qty;
 	@FindBy (xpath="//span[text()=\"Add to Cart\"]")
@@ -22,6 +24,16 @@ public class Orderpagepom {
 	private WebElement counterQty;
 	@FindBy (id="top-cart-btn-checkout")
 	private WebElement checkoutBtn;
+	@FindBy (xpath="//a[@title=\"Remove item\"]")
+	private WebElement delete;
+	@FindBy (xpath="//span[text()=\"OK\"]")
+	private WebElement deleteOk;
+	@FindBy (xpath="//span[text()=\"Cancel\"]")
+	private WebElement deleteCancel;
+	@FindBy (xpath="//div[@class=\"modal-inner-wrap\"]/following::button[@class=\"action-close\"]")
+	private WebElement deleteClose;
+	@FindBy (xpath="//a[@class=\"action edit\"]")
+	private WebElement editIcon;
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -45,6 +57,24 @@ public class Orderpagepom {
 	}
 	public WebElement getCheckoutBtn() {
 		return checkoutBtn;
+	}
+	public WebElement getDelete() {
+		return delete;
+	}
+	public WebElement getDeleteOk() {
+		return deleteOk;
+	}
+	public WebElement getDeleteCancel() {
+		return deleteCancel;
+	}
+	public WebElement getDeleteClose() {
+		return deleteClose;
+	}
+	public WebElement getEditIcon() {
+		return editIcon;
+	}
+	public WebElement getColorR() {
+		return colorR;
 	}
 	public Orderpagepom(WebDriver abc) {
 		driver=abc;
